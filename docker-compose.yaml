@@ -1,0 +1,10 @@
+services:
+  psql-envinit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=mydb
+      - INIT_SQL_SCRIPT_BASE64=Q1JFQVRFIERBVEFCQVNFIHRlc3RkYjs=
